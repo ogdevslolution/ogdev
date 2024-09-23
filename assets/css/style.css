@@ -625,20 +625,20 @@ section.hero {
 }
 
 .review-content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-style: italic;
   margin: 0 0 20px 0;
 }
 
 .review-author p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--headline);
   margin: 0 0 6px 0;
   font-weight: bold;
 }
 
 .review-stars {
-  max-width: 30%;
+  max-width: 5rem;
   margin: 0 auto;
   color: gold;
   margin-bottom: 14px;
@@ -663,7 +663,7 @@ section.hero {
   }
 }
 
-/* OFFER SECTION STARTS HERE */
+/* OFFER why choose us SECTION STARTS HERE */
 .offer-holder {
   display: flex;
   align-items: center;
@@ -708,7 +708,7 @@ section.hero {
 
 .col-two {
   text-align: center;
-  background: var(--secondary-light);
+  background: var(--background-light);
   border-radius: 20px;
 }
 
@@ -1212,7 +1212,12 @@ td {
   gap: 3rem;
   text-align: center;
 }
-
+@media screen and (min-width: 768px) {
+  .team-holder {
+    width: 50%;
+  }
+  
+}
 .team-card img {
   width: 6rem;
   aspect-ratio: 1 / 1;
