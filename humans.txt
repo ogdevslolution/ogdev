@@ -1,0 +1,30 @@
+/* TEAM */
+Vivek Lohar
+Role: Founder & Frontend Developer
+Website: https://vivekmohanlohar.github.io/viveklohar/
+Email: ogdev@protonmail.in
+
+Om Kute
+Role: Backend Developer
+
+Akshay Zadokar
+Role: Security & Testing
+
+Abhay Lohar
+Role: Designer
+
+/* SITE */
+OGDEV Website
+Description: Custom website development, SEO optimization, responsive design, security.
+Developed by: OGDEV Team
+URL: https://vivekmohanlohar.github.io/ogdev/
+
+/* THANKS */
+Special thanks to the following resources:
+- HTML, CSS, and JavaScript for the frontend
+- Backend tools and platforms used for development
+- Security tools for website testing and maintenance
+
+/* NOTE */
+This website and all its assets are the property of OGDEV. All content is maintained by the OGDEV team. Unauthorized editing or cloning is prohibited.
+Thank You for your time 😊🤘
