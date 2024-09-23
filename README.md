@@ -7,7 +7,7 @@ Welcome to the official repository of **OGDEV**! This site is designed and devel
 - **Vivek Lohar** - Founder & Frontend Developer  
   [Personal Website](https://vivekmohanlohar.github.io/viveklohar/)
 
-- **Om Kute** - Backend Developer
+- **Om Kute** - Co-Founder & Backend Developer
 
 - **Akshay Zadokar** - Security & Testing
 

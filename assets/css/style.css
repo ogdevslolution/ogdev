@@ -11,7 +11,7 @@
   --button-text: #001e1d;
   --stroke: #001e1d;
   --main: #e8e4e6;
-  --highlight: #FFD401;
+  --highlight: #ffd401;
   --highlight--theme: #57eeb280;
   --secondary: #abd1c6;
   --secondary-light: rgba(171, 209, 198, 0.14);
@@ -64,9 +64,11 @@ body {
   font-family: var(--font-secondary);
   line-height: 1.7;
   color: var(--white);
-  background-image: linear-gradient(45deg,
+  background-image: linear-gradient(
+      45deg,
       rgba(22, 22, 22, 0.7),
-      rgba(22, 22, 22, 0.7)),
+      rgba(22, 22, 22, 0.7)
+    ),
     url("/assets/images/body-big.jpg");
   background-position: center;
   background-size: cover;
@@ -79,9 +81,11 @@ body {
 
 @media screen and (max-width: 900px) {
   body {
-    background-image: linear-gradient(45deg,
+    background-image: linear-gradient(
+        45deg,
         rgba(22, 22, 22, 0.7),
-        rgba(22, 22, 22, 0.7)),
+        rgba(22, 22, 22, 0.7)
+      ),
       url("/assets/images/body-small.jpg");
   }
 }
@@ -95,6 +99,23 @@ h1 {
   color: var(--headline);
   line-height: 1.2;
   margin: 0 0 15px 0;
+}
+@media screen and (min-width: 568px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
 /* custom text highlights */
@@ -249,7 +270,7 @@ section {
 }
 
 .btn-one:hover {
-  color: #ffffff;
+  color: var(--background);
   border: 1px solid var(--highlight);
 }
 
@@ -407,6 +428,8 @@ nav.visible {
 /* HERO SECTION STARTS HERE */
 section.hero {
   height: 60vh;
+  display: grid;
+  place-items: center;
 }
 
 .hero-img {
@@ -446,7 +469,7 @@ section.hero {
 }
 
 .stars {
-  max-width: 30%;
+  max-width: 5rem;
   margin: 0 auto;
   color: gold;
   margin-bottom: 14px;
@@ -462,6 +485,39 @@ section.hero {
   font-style: italic;
   font-size: 14px;
   color: var(--paragraph);
+}
+/* Desktop Optimization */
+@media screen and (min-width: 768px) {
+  section.hero {
+    height: 80vh;
+  }
+  .hero__content-text {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    width: 700px;
+  }
+
+  .hero-img::after {
+    width: 750px;
+  }
+
+  .hero-img img {
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  .hero__content-text {
+    text-align: center;
+  }
+
+  .stars i {
+    font-size: .8rem;
+  }
+
 }
 
 /* SERVICES SECTION STARTS HERE */
@@ -512,20 +568,28 @@ section.hero {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
-
+/* 
 @media screen and (min-width: 768px) {
   .services-card__list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
   }
-}
+} */
 
 .services-card__list_item {
   display: flex;
   align-items: center;
   padding: 8px 0;
+  background-color: var(--background-light);
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
 .check {
@@ -593,7 +657,6 @@ section.hero {
 }
 
 @media (max-width: 768px) {
-
   .review-card,
   .project-holder {
     flex-basis: 100%;
@@ -1191,9 +1254,11 @@ footer .container {
 
 /* LOCAL ORDERS CARD SECTION STARTS HERE */
 .local-orders {
-  background-image: linear-gradient(45deg,
+  background-image: linear-gradient(
+      45deg,
       rgba(0, 0, 0, 0.31),
-      rgba(0, 0, 0, 0.31)),
+      rgba(0, 0, 0, 0.31)
+    ),
     url("/images/local_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1264,10 +1329,6 @@ footer .container {
     /* section */
     --section-height: auto;
     --section-padding: 6rem 0;
-  }
-
-  h1 {
-    font-size: 2.3rem;
   }
 
   .container {
