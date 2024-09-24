@@ -225,7 +225,7 @@ section {
 
 .btn-one {
   padding: 12px 24px;
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--highlight);
   border-radius: 50px;
   margin: 10px auto 8px auto;
   transition: all 0.2s ease-in;
@@ -234,9 +234,9 @@ section {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  color: var(--secondary);
+  color: var(--background);
   z-index: 1;
-  background: transparent;
+  background: var(--highlight);
 }
 
 .btn-one:before {
@@ -270,19 +270,20 @@ section {
 }
 
 .btn-one:hover {
-  color: var(--background);
-  border: 1px solid var(--highlight);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  background: transparent;
 }
 
 .btn-one:hover:before {
   top: -35%;
-  background-color: var(--highlight);
+  background-color: var(--background);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 .btn-one:hover:after {
   top: -45%;
-  background-color: var(--highlight);
+  background-color: var(--background-light);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
@@ -588,6 +589,7 @@ section.hero {
   align-items: center;
   padding: 8px 0;
   background-color: var(--background-light);
+ /* border: .2px solid var(--secondary);*/
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -930,6 +932,51 @@ td {
   margin: 0 0 0 10px;
   fill: currentColor;
 }
+
+/* Plans Note section at bottom of cards */
+.plans-note {
+  padding: 15px;
+  border-radius: 10px;
+  background: var(--background-light);
+  position: relative;
+  margin: 0 auto 0 auto;
+  font-size: 14px;
+  width: 80%;
+  text-align: center;
+  border: .5px solid var(--highlight);
+}
+@media screen and (min-width: 768px) {
+ .plans-note {
+   width: 50%;
+ }
+}
+
+.plans-note--icon{
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--highlight);
+}
+.plans-note--icon i{
+    width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+  font-size: 1.2rem;
+}
+.plans-note p {
+  margin: 20px 0 0 0;
+}
+
 
 /* FAQ SECTION STARTS HERE */
 .faq-item {
