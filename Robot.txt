@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Allow: /
-Sitemap: https://vivekmohanlohar.github.io/ogdev/sitemap.xml
