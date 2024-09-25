@@ -41,10 +41,4 @@ This repository is private and only editable by **authorized team members**. The
 - Akshay Zadokar (Security & Testing)
 - Abhay Lohar (Designer)
 
-## Installation and Setup
-
-If you're a team member, follow the steps below to set up the project on your local machine:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/ogdev.git
+## Thank You for your time
