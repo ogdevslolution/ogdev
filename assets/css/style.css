@@ -76,7 +76,7 @@ body {
   background-attachment: fixed;
   position: relative;
   overflow-y: auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 900px) {
