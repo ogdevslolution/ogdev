@@ -188,3 +188,13 @@ function closePopup(popupId) {
     popup.style.display = "none";
   }, 300); // Matches the transition duration
 }
+
+// Javascript  code to tackle the body white box issue
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+        $('body').css('padding-top', $('nav').outerHeight());
+    } else {
+        $('body').css('padding-top', 0);
+    }
+});
